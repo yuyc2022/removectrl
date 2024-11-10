@@ -33,4 +33,4 @@ jobs:
     - name: Build
       working-directory: ${{env.GITHUB_WORKSPACE}}
       # Set PlatformToolset to v143 for Visual Studio 2022 compatibility
-      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:PlatformToolset=v143 ${{env.SOLUTION_FILE_PATH}}
+      run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:PlatformToolset=v100 ${{env.SOLUTION_FILE_PATH}}
